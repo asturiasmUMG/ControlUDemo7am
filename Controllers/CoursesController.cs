@@ -22,7 +22,7 @@ public class CoursesController : ControllerBase
             .Select(c => new CourseResponseDto
             {
                 Id = c.Id,
-                Name = c.Name,
+                Name = c.Name + " - UMG",
                 Code = c.Code,
                 Credits = c.Credits,
                 ProfessorId = c.ProfessorId,
