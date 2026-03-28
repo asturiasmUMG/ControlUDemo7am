@@ -66,7 +66,7 @@ public class CoursesControllerTests
 
         var created = Assert.IsType<CreatedAtActionResult>(result.Result);
         var course = Assert.IsType<CourseResponseDto>(created.Value);
-        Assert.Equal("Nueva Materia", course.Name);
+        Assert.Equal("Nueva Materia - UMG", course.Name);
         Assert.Equal("Test Prof", course.ProfessorName);
     }
     [Fact]
